@@ -11,3 +11,7 @@ Ce dépôt est un projet de test pour expérimenter avec Git et GitHub.
 1. Cloner le dépôt :
 ```bash
 git clone <URL_DU_DEPOT>
+## Modifications
+- Ajout du fichier tache.txt avec 3 tâches
+- Création de la branche feature/ajout-tache
+modification locale
