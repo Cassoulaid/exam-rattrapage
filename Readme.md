@@ -18,4 +18,10 @@ modification locale
 ## Modifications
 - Ajout du fichier tache.txt avec 3 tâches
 - Création de la branche feature/ajout-tache
+<<<<<<< HEAD
 modification locale
+=======
+
+
+/Ajout en ligne pour conflict volontaire
+>>>>>>> a7a404c31b7a70440c6cfe5ec96157af143708ee
