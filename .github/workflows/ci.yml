@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, feature/** ]
+  pull_request:
+
+jobs:
+  check-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: Vérifier la présence de tache.txt
+        run: |
+          if [ ! -f "tache.txt" ]; then
+            echo "tache.txt est manquant"
+            exit 1
+          else
+            echo "tache.txt existe"
+          fi
+
+      - name: Vérifier la convention des commits
+        run: |
+          git log --pretty=format:%s | while read commit; do
+            if [[ ! "$commit" =~ ^(feat|fix|docs):\  ]]; then
+              echo "Commit non conforme : $commit"
+              exit 1
+            fi
+          done
+          echo "Commit conforme"
