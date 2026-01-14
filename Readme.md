@@ -20,4 +20,6 @@ modification locale
 - Création de la branche feature/ajout-tache
 modification locale
 
-![CI](https://github.com/Cassoulaid/exam-rattrapage/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Cassoulaid/exam-rattrapage/.github/workflows/main.yml/badge.svg)
+
+.github/workflows/main.yml
