@@ -19,3 +19,5 @@ modification locale
 - Ajout du fichier tache.txt avec 3 tâches
 - Création de la branche feature/ajout-tache
 modification locale
+
+![CI](https://github.com/Cassoulaid/exam-rattrapage/actions/workflows/ci.yml/badge.svg)
